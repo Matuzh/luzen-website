@@ -27,13 +27,19 @@ const currentYear = new Date().getFullYear();
   </head>
 
   <body class="min-h-screen bg-paper text-ink antialiased">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-paper focus:px-4 focus:py-3 focus:font-medium"
+    >
+      Skip to content
+    </a>
     <Header />
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <slot />
     </main>
 
-    <footer class="mx-auto max-w-7xl px-6 py-10 text-sm text-muted">
+    <footer class="mx-auto max-w-7xl px-6 py-10 text-sm text-muted lg:px-8">
       <p>© {currentYear} LuzeN</p>
     </footer>
   </body>
