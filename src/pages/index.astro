@@ -1,73 +1,9 @@
 ---
-import "../styles/global.css";
-import Header from "../components/Header.astro";
-
-const currentYear = new Date().getFullYear();
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+<BaseLayout>
+	<section class="hero">
 
-    <meta
-      name="description"
-      content="LuzeN — games, software and development projects."
-    />
-
-    <title>LuzeN</title>
-  </head>
-
-  <body>
-    <Header />
-
-    <main>
-      <section class="hero">
-        <p>SINCE 2016</p>
-        <h1>Still building.</h1>
-
-        <p>
-          LuzeN started as a group of friends brought together by games. More
-          than a decade later, we're still creating — now through games,
-          software and whatever comes next.
-        </p>
-
-		<button>Explore the game</button>
-		<button>Our story</button>
-      </section>
-
-      <section id="game">
-        <p>Featured project</p>
-        <h2>2D Survival</h2>
-
-        <p>
-          A 2D survival game focused on exploration, progression and a world
-          that grows alongside the player.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-
-        <p>
-          Software, games and other things I've built while learning and solving
-          real problems.
-        </p>
-      </section>
-
-      <section id="about">
-        <h2>About LuzeN</h2>
-
-        <p>
-          LuzeN is an independent development brand focused on games,
-          programming and experimentation.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>© {currentYear} LuzeN</p>
-    </footer>
-  </body>
-</html>
+	</section>
+</BaseLayout>
