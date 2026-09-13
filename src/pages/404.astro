@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Page not found - LuzeN"
+  description="This page could not be found. Head back to the LuzeN homepage."
+>
+  <section class="border-b border-line">
+    <div class="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
+      <p class="text-sm font-medium tracking-widest text-brand">
+        404
+      </p>
+
+      <h1
+        class="mt-6 max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl"
+      >
+        This page isn't here.
+      </h1>
+
+      <p class="mt-6 max-w-lg text-lg leading-relaxed text-muted">
+        The link may be outdated, or the address might be incorrect.
+      </p>
+
+      <a
+        href="/"
+        class="mt-10 inline-block py-2 font-medium underline underline-offset-4 transition-colors hover:text-brand"
+      >
+        Back to homepage
+      </a>
+    </div>
+  </section>
+</BaseLayout>
