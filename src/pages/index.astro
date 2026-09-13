@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import AboutSection from "../components/AboutSection.astro";
 ---
 
 <BaseLayout
@@ -25,7 +26,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </h1>
 
         <p class="text-sm text-muted">
-          Teams · Servers · Projects · Whatever came next
+          Community · Games · Software · Questionable ideas
         </p>
       </div>
 
@@ -33,9 +34,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         class="flex flex-col justify-between border-t border-line px-6 py-12 lg:border-t-0 lg:px-8 lg:py-16"
       >
         <p class="max-w-md text-base leading-7">
-          LuzeN was never a company or a carefully planned project. It started
-          with a group of friends playing games and became a shared name for
-          teams, servers, small projects and ideas we kept creating together.
+          The story began around 2016 with a small group of friends, games and
+          too many ideas. The name LuzeN came later and stayed — first with the
+          community, then with servers, a computer service, games, software and
+          whatever I build next.
         </p>
 
         <a
@@ -48,4 +50,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </div>
   </section>
+  <AboutSection />
 </BaseLayout>
