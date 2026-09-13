@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/o-nas",
+      "destination": "/#about",
+      "permanent": true
+    },
+    {
+      "source": "/marketplace",
+      "destination": "/#projects",
+      "permanent": true
+    }
+  ]
+}
