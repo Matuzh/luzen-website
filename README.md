@@ -1,43 +1,85 @@
-# Astro Starter Kit: Minimal
+# LuzeN website
 
-```sh
-pnpm create astro@latest -- --template minimal
+The main website for LuzeN — a community and a name shared by games,
+software and other projects.
+
+The community has roots around 2016. The name appeared around 2017–2018.
+
+## Stack
+
+- Astro — pages, layouts and components
+- Tailwind CSS — styling
+- TypeScript — type checking
+- pnpm — dependency management
+
+## Requirements
+
+- Node.js 22.12.0 or newer
+- pnpm in the version specified by `packageManager` in `package.json`
+
+## Local development
+
+Install the dependencies:
+
+```bash
+pnpm install --frozen-lockfile
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Start the development server in the background:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+pnpm astro dev --background
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Open the local address printed in the terminal.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Manage the server:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+pnpm astro dev status
+pnpm astro dev logs
+pnpm astro dev stop
+```
 
-## 🧞 Commands
+## Checks and production build
 
-All commands are run from the root of the project, from a terminal:
+Check types and Astro components:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+```bash
+pnpm check
+```
 
-## 👀 Want to learn more?
+Generate the production site:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+pnpm build
+```
+
+Preview the production build locally:
+
+```bash
+pnpm preview
+```
+
+The generated site is placed in `dist/`.
+
+## Project structure
+
+- `src/pages/index.astro` — homepage metadata and section order
+- `src/layouts/BaseLayout.astro` — shared HTML structure, header and footer
+- `src/components/` — page sections and reusable components
+- `src/styles/global.css` — theme colors, fonts and global accessibility styles
+- `public/` — files served directly, such as the favicon
+
+## Working on the site
+
+1. Make a focused change.
+2. Run `pnpm check` and `pnpm build`.
+3. Check the result at narrow and wide viewport sizes.
+4. Check navigation with the keyboard when changing interactive elements.
+5. Commit the completed change.
+
+## Deployment
+
+Deployment configuration and migration from the previous luzen.pl website
+are still being prepared.
