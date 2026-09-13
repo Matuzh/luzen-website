@@ -1,45 +1,26 @@
-<header class="site-header">
-    <nav class="navbar">
-        <a href="/" class="text-xl font-bold">LuzeN</a>
+<header class="border-b border-line">
+  <nav
+    class="mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center px-6 py-5 md:grid-cols-3 lg:px-8"
+    aria-label="Main navigation"
+  >
+    <a href="/" class="justify-self-start text-xl font-bold tracking-tight">
+      Luze<span class="text-brand">N</span>     
+    </a>  <!-- tymczasowe logo  -->
 
-        <div class="nav-links">
-            <a href="#game">Game</a>
-            <a href="#projects">Projects</a>
-            <a href="#story">Story</a>
-        </div>
-    </nav>
+    <p
+      class="hidden justify-self-center text-xs tracking-widest text-muted uppercase md:block"
+    >
+      Independent · Since 2016
+    </p>
+
+    <div class="hidden justify-self-end gap-6 text-sm sm:flex">
+      <a class="transition-colors hover:text-brand" href="/#game"> Game </a>
+
+      <a class="transition-colors hover:text-brand" href="/#projects">
+        Projects
+      </a>
+
+      <a class="transition-colors hover:text-brand" href="/#story"> Story </a>
+    </div>
+  </nav>
 </header>
-
-<style>
-    header {
-        border-bottom: 1px solid #2a2a2a;
-    }
-
-    nav {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 24px 32px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav > a {
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
-
-    nav div {
-        display: flex;
-        gap: 24px;
-    }
-
-    nav div a {
-        color: #bdbdbd;
-    }
-
-    nav div a:hover {
-        color: #ffffff;
-    }
-</style>

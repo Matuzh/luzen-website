@@ -2,8 +2,50 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
-	<section class="hero">
+<BaseLayout
+  title="LuzeN - A random name that stuck"
+  description="LuzeN is a group of friends, games, servers, projects and ideas going back to 2016."
+>
+  <section class="border-b border-line">
+    <div
+      class="mx-auto grid max-w-7xl lg:min-h-[calc(100vh-81px)] lg:grid-cols-[2fr_1fr]"
+    >
+      <div
+        class="flex min-h-128 flex-col justify-between px-6 py-12 lg:border-r lg:border-line lg:px-8 lg:py-16"
+      >
+        <p class="text-xs font-medium tracking-widest text-muted uppercase">
+          Friends, games and ideas since 2016
+        </p>
 
-	</section>
+        <h1
+          class="max-w-4xl py-20 text-5xl leading-[0.95] font-semibold tracking-tighter sm:text-7xl lg:text-8xl"
+        >
+          A random name that
+          <span class="text-brand">somehow stuck.</span>
+        </h1>
+
+        <p class="text-sm text-muted">
+          Teams · Servers · Projects · Whatever came next
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col justify-between border-t border-line px-6 py-12 lg:border-t-0 lg:px-8 lg:py-16"
+      >
+        <p class="max-w-md text-base leading-7">
+          LuzeN was never a company or a carefully planned project. It started
+          with a group of friends playing games and became a shared name for
+          teams, servers, small projects and ideas we kept creating together.
+        </p>
+
+        <a
+          href="#story"
+          class="mt-20 flex items-center justify-between border-t border-line pt-4 text-sm transition-colors hover:text-brand"
+        >
+          <span>How it started</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

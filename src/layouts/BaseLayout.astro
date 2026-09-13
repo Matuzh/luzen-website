@@ -26,16 +26,15 @@ const currentYear = new Date().getFullYear();
     <title>{title}</title>
   </head>
 
-  <body class="min-h-screen bg-zinc-950 text-zinc-100 antialiased">
+  <body class="min-h-screen bg-paper text-ink antialiased">
     <Header />
 
     <main>
-        <slot />
+      <slot />
     </main>
 
-    <footer class="mx-auto max-w-7x1 px-6 py-10 text-sm text-zinc-500">
-        <p>© {currentYear} LuzeN</p>
+    <footer class="mx-auto max-w-7xl px-6 py-10 text-sm text-muted">
+      <p>© {currentYear} LuzeN</p>
     </footer>
-
   </body>
 </html>
