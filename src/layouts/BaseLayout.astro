@@ -5,12 +5,16 @@ import Header from "../components/Header.astro";
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
 
 const {
   title = "LuzeN",
   description = "LuzeN - games, software and development projects.",
+  noindex = false,
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const currentYear = new Date().getFullYear();
 ---
@@ -21,7 +25,16 @@ const currentYear = new Date().getFullYear();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    
+    {
+        noindex ? (
+            <meta name="robots" content="noindex" />
+        ) : (
+            <>
+                <link rel="canonical" href={canonicalURL.href} />
+                <meta property="og:url" content={canonicalURL.href} />
+            </>
+        )
+    }
     <meta property="og:site_name" content="LuzeN" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
