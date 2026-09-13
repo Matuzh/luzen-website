@@ -1,12 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import AboutSection from "../components/AboutSection.astro";
+import ProjectsSection from "../components/ProjectsSection.astro";
 ---
 
 <BaseLayout
   title="LuzeN - A random name that stuck"
-  description="LuzeN is a group of friends, games, servers, projects and ideas going back to 2016."
+  description="LuzeN is a community and a name for games, servers, software and ideas going back to 2016."
 >
+  <!-- SEKCJA HERO  -->
   <section class="border-b border-line">
     <div
       class="mx-auto grid max-w-7xl lg:min-h-[calc(100vh-81px)] lg:grid-cols-[2fr_1fr]"
@@ -37,7 +39,7 @@ import AboutSection from "../components/AboutSection.astro";
           The story began around 2016 with a small group of friends, games and
           too many ideas. The name LuzeN came later and stayed — first with the
           community, then with servers, a computer service, games, software and
-          whatever I build next.
+          whatever we build next.
         </p>
 
         <a
@@ -50,5 +52,7 @@ import AboutSection from "../components/AboutSection.astro";
       </div>
     </div>
   </section>
+
   <AboutSection />
+  <ProjectsSection />
 </BaseLayout>
